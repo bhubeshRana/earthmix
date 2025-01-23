@@ -1,0 +1,1708 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="2f67614d-4ddb-4130-9705-eed2b187740b" data-section-id="2f67614d-4ddb-4130-9705-eed2b187740b">
+
+<htmlCode>
+<div id="root">
+  <div id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="/" class="flex items-center space-x-2">
+            <span class="text-2xl font-bold text-green-700">
+              <i class="fa-solid fa-seedling"></i>
+              EarthMix
+            </span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-gray-700 hover:text-green-600 transition-colors">Home</a>
+          <a href="/products" class="text-gray-700 hover:text-green-600 transition-colors">Products</a>
+          <a href="/categories" class="text-gray-700 hover:text-green-600 transition-colors">Categories</a>
+          <a href="/about" class="text-gray-700 hover:text-green-600 transition-colors">About</a>
+          <a href="/contact" class="text-gray-700 hover:text-green-600 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Navigation Icons -->
+        <div class="flex items-center space-x-4">
+          <button class="text-gray-700 hover:text-green-600 transition-colors">
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+          </button>
+          <button class="text-gray-700 hover:text-green-600 transition-colors">
+            <i class="fa-regular fa-heart text-xl"></i>
+          </button>
+          <button class="text-gray-700 hover:text-green-600 transition-colors relative">
+            <i class="fa-solid fa-cart-shopping text-xl"></i>
+            <span class="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+          </button>
+          <button class="md:hidden text-gray-700 hover:text-green-600 transition-colors">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="md:hidden hidden bg-white border-t">
+      <div class="container mx-auto px-4 py-2">
+        <nav class="flex flex-col space-y-4">
+          <a href="/" class="text-gray-700 hover:text-green-600 transition-colors py-2">Home</a>
+          <a href="/products" class="text-gray-700 hover:text-green-600 transition-colors py-2">Products</a>
+          <a href="/categories" class="text-gray-700 hover:text-green-600 transition-colors py-2">Categories</a>
+          <a href="/about" class="text-gray-700 hover:text-green-600 transition-colors py-2">About</a>
+          <a href="/contact" class="text-gray-700 hover:text-green-600 transition-colors py-2">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+</htmlCode></element><element id="d3418b22-8c15-4d0f-9f76-9e68e47a7d7e" data-section-id="d3418b22-8c15-4d0f-9f76-9e68e47a7d7e">
+
+<htmlCode>
+<div id="root">
+  <section id="hero" class="relative min-h-screen pt-20 bg-gradient-to-br from-green-50 to-green-100">
+    <div class="container mx-auto px-4 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="text-center md:text-left space-y-6 md:space-y-8">
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+            <span class="text-green-700">Grow Better</span> with Natural Solutions
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600">
+            Premium agricultural products for sustainable farming. Discover our range of organic composts and eco-friendly agricultural medicines.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Shop Now
+            </button>
+            <button class="bg-white hover:bg-gray-100 text-green-600 px-8 py-3 rounded-full font-semibold transition-colors duration-300 border-2 border-green-600 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-book-open"></i>
+              Learn More
+            </button>
+          </div>
+          <div class="flex items-center justify-center md:justify-start gap-8 pt-8">
+            <div class="text-center">
+              <p class="text-3xl font-bold text-green-700">1000+</p>
+              <p class="text-gray-600">Products</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-green-700">5000+</p>
+              <p class="text-gray-600">Happy Farmers</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-green-700">98%</p>
+              <p class="text-gray-600">Satisfaction</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-green-200 rounded-full opacity-50 animate-pulse"></div>
+          <div class="absolute -bottom-8 -left-8 w-24 h-24 bg-green-300 rounded-full opacity-50 animate-pulse"></div>
+          <div class="relative bg-white p-4 rounded-2xl shadow-xl">
+            <div class="aspect-w-4 aspect-h-3 bg-green-50 rounded-xl flex items-center justify-center">
+              <i class="fa-solid fa-seedling text-9xl text-green-600 opacity-20"></i>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <i class="fa-solid fa-leaf text-5xl text-green-600 mb-4"></i>
+                  <p class="text-gray-500">Image Placeholder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="absolute top-1/4 left-8 animate-bounce hidden md:block">
+      <i class="fa-solid fa-leaf text-green-500 text-3xl"></i>
+    </div>
+    <div class="absolute bottom-1/4 right-8 animate-bounce delay-200 hidden md:block">
+      <i class="fa-solid fa-seedling text-green-600 text-3xl"></i>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="1ea370b4-d346-4fbf-94da-a28dab97397b" data-section-id="1ea370b4-d346-4fbf-94da-a28dab97397b">
+
+<htmlCode>
+<div id="root">
+  <section id="featured-products" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Products</h2>
+        <p class="text-gray-600">Discover our top-rated agricultural solutions</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+              <i class="fa-solid fa-seedling text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">New</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Organic Compost Plus</h3>
+            <p class="text-gray-600 text-sm mb-4">Premium quality organic compost for better yield</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$29.99</span>
+              <div class="flex text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+              <i class="fa-solid fa-flask text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">Hot</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Bio Growth Enhancer</h3>
+            <p class="text-gray-600 text-sm mb-4">Natural plant growth solution</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$39.99</span>
+              <div class="flex text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+              <i class="fa-solid fa-leaf text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Popular</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Natural Pesticide</h3>
+            <p class="text-gray-600 text-sm mb-4">Eco-friendly pest control solution</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$24.99</span>
+              <div class="flex text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+              <i class="fa-solid fa-wheat-awn text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Best Seller</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Soil Enricher Pro</h3>
+            <p class="text-gray-600 text-sm mb-4">Complete soil nutrition package</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$49.99</span>
+              <div class="flex text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="inline-flex items-center gap-2 bg-white text-green-600 border-2 border-green-600 hover:bg-green-50 px-8 py-3 rounded-full font-semibold transition-colors duration-300">
+          View All Products
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="4bad4fb3-06c8-48d3-b086-704450094bf1" data-section-id="4bad4fb3-06c8-48d3-b086-704450094bf1">
+
+<htmlCode>
+<div id="root">
+  <section id="categories" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Product Categories</h2>
+        <p class="text-gray-600">Explore our wide range of agricultural solutions</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Category 1 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-seedling text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Organic Compost</h3>
+            <p class="text-sm text-gray-600 mb-4">Natural soil enrichment</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-flask text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Bio Fertilizers</h3>
+            <p class="text-sm text-gray-600 mb-4">Growth enhancers</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-virus text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Pest Control</h3>
+            <p class="text-sm text-gray-600 mb-4">Natural solutions</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-wheat-awn text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Seeds</h3>
+            <p class="text-sm text-gray-600 mb-4">Premium quality</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-leaf text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Plant Nutrients</h3>
+            <p class="text-sm text-gray-600 mb-4">Essential minerals</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-droplet text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Irrigation</h3>
+            <p class="text-sm text-gray-600 mb-4">Water solutions</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 7 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-tree text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Plant Care</h3>
+            <p class="text-sm text-gray-600 mb-4">Growth essentials</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Category 8 -->
+        <div class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class="p-6 text-center">
+            <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors duration-300">
+              <i class="fa-solid fa-toolbox text-3xl text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Tools</h3>
+            <p class="text-sm text-gray-600 mb-4">Farming equipment</p>
+            <span class="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-300 flex items-center justify-center gap-2">
+              Browse Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="d03d8e18-d9f2-429d-9ae3-00005951ceff" data-section-id="d03d8e18-d9f2-429d-9ae3-00005951ceff">
+
+<htmlCode>
+<div id="root">
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <div class="bg-green-50 rounded-2xl p-8 relative z-10">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white rounded-lg p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                <i class="fa-solid fa-leaf text-4xl text-green-600 mb-4"></i>
+                <h3 class="font-semibold text-gray-800 mb-2">Eco-Friendly</h3>
+                <p class="text-sm text-gray-600">100% natural and sustainable solutions</p>
+              </div>
+              <div class="bg-white rounded-lg p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 mt-8">
+                <i class="fa-solid fa-flask-vial text-4xl text-green-600 mb-4"></i>
+                <h3 class="font-semibold text-gray-800 mb-2">Research-Backed</h3>
+                <p class="text-sm text-gray-600">Scientifically proven products</p>
+              </div>
+              <div class="bg-white rounded-lg p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                <i class="fa-solid fa-handshake text-4xl text-green-600 mb-4"></i>
+                <h3 class="font-semibold text-gray-800 mb-2">Trusted</h3>
+                <p class="text-sm text-gray-600">By farmers nationwide</p>
+              </div>
+              <div class="bg-white rounded-lg p-6 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 mt-8">
+                <i class="fa-solid fa-seedling text-4xl text-green-600 mb-4"></i>
+                <h3 class="font-semibold text-gray-800 mb-2">Organic</h3>
+                <p class="text-sm text-gray-600">Pure and natural ingredients</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -top-6 -left-6 w-24 h-24 bg-green-200 rounded-full opacity-50"></div>
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-green-100 rounded-full opacity-50"></div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="inline-block">
+            <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium">About EarthMix</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">Nurturing the Future of Agriculture</h2>
+          <p class="text-gray-600 leading-relaxed">
+            At EarthMix, we're committed to revolutionizing agriculture through sustainable and organic solutions. With years of expertise in developing premium agricultural products, we help farmers achieve better yields while maintaining ecological balance.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-check text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-1">Premium Quality Products</h3>
+                <p class="text-gray-600 text-sm">Rigorous quality control for optimal results</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-check text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-1">Expert Support</h3>
+                <p class="text-gray-600 text-sm">Dedicated agricultural specialists at your service</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-check text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-1">Nationwide Delivery</h3>
+                <p class="text-gray-600 text-sm">Quick and reliable shipping across the country</p>
+              </div>
+            </div>
+          </div>
+          <button class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300">
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="91c9f231-bb9a-4aea-a194-a90e377d165a" data-section-id="91c9f231-bb9a-4aea-a194-a90e377d165a">
+
+<htmlCode>
+<div id="root">
+  <section id="benefits" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium">Why Choose EarthMix</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-6 mb-4">Benefits That Make Us Stand Out</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Experience the advantage of our premium agricultural solutions designed to enhance your farming success</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Benefit Card 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-leaf text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">100% Organic Products</h3>
+          <p class="text-gray-600">Our products are made from natural ingredients, ensuring safety for both crops and soil</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Chemical-free composition
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Eco-friendly packaging
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefit Card 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-flask text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Scientifically Proven</h3>
+          <p class="text-gray-600">All products undergo rigorous testing and research to ensure maximum effectiveness</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Lab-tested formulas
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Proven results
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefit Card 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-hand-holding-dollar text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Cost-Effective Solutions</h3>
+          <p class="text-gray-600">Get the best value for your investment with our high-quality products</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Competitive pricing
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Bulk discounts
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefit Card 4 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-truck-fast text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Fast Delivery</h3>
+          <p class="text-gray-600">Quick and reliable shipping to ensure you get your products when needed</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Nationwide coverage
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Track your order
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefit Card 5 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-headset text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Expert Support</h3>
+          <p class="text-gray-600">Get professional guidance from our team of agricultural experts</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              24/7 assistance
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Technical guidance
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefit Card 6 -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i class="fa-solid fa-shield-heart text-3xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Quality Guarantee</h3>
+          <p class="text-gray-600">We stand behind our products with satisfaction guarantee</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Money-back guarantee
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i class="fa-solid fa-check text-green-500 mr-3"></i>
+              Quality assurance
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="9c296b7a-d35f-4b05-a54c-cc06a84939b0" data-section-id="9c296b7a-d35f-4b05-a54c-cc06a84939b0">
+
+<htmlCode>
+<div id="root">
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium">Testimonials</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-6 mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Hear from farmers who have experienced success with our products</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-green-50 rounded-2xl p-8 relative">
+          <div class="absolute -top-4 -right-4 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-quote-right text-green-600"></i>
+          </div>
+          <div class="flex items-center mb-6">
+            <img src="https://avatar.iran.liara.run/public" alt="Customer" class="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg" />
+            <div class="ml-4">
+              <h3 class="font-semibold text-gray-800">John Smith</h3>
+              <p class="text-gray-600 text-sm">Organic Farmer</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "EarthMix's organic compost has transformed my farm's productivity. The results were visible within weeks, and my crops have never been healthier."
+          </p>
+          <div class="flex text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-green-50 rounded-2xl p-8 relative">
+          <div class="absolute -top-4 -right-4 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-quote-right text-green-600"></i>
+          </div>
+          <div class="flex items-center mb-6">
+            <img src="https://avatar.iran.liara.run/public" alt="Customer" class="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg" />
+            <div class="ml-4">
+              <h3 class="font-semibold text-gray-800">Sarah Johnson</h3>
+              <p class="text-gray-600 text-sm">Agricultural Specialist</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "The quality of EarthMix products is consistently excellent. Their bio-fertilizers have helped many of my clients achieve remarkable yields."
+          </p>
+          <div class="flex text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-green-50 rounded-2xl p-8 relative">
+          <div class="absolute -top-4 -right-4 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-quote-right text-green-600"></i>
+          </div>
+          <div class="flex items-center mb-6">
+            <img src="https://avatar.iran.liara.run/public" alt="Customer" class="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg" />
+            <div class="ml-4">
+              <h3 class="font-semibold text-gray-800">Michael Chen</h3>
+              <p class="text-gray-600 text-sm">Greenhouse Owner</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Their customer service is outstanding. The team went above and beyond to help me choose the right products for my greenhouse operation."
+          </p>
+          <div class="flex text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <button class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300">
+          View All Reviews
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="341da192-5a7f-4a95-955c-c07b386be820" data-section-id="341da192-5a7f-4a95-955c-c07b386be820">
+
+<htmlCode>
+<div id="root">
+  <section id="product-catalog" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Product Catalog</h2>
+        <p class="text-gray-600">Browse our complete collection of agricultural solutions</p>
+      </div>
+
+      <!-- Filters and Search -->
+      <div class="mb-8">
+        <div class="flex flex-wrap gap-4 items-center justify-between">
+          <div class="flex gap-4 flex-wrap">
+            <select class="bg-white border border-gray-200 rounded-full px-6 py-2 focus:outline-none focus:border-green-500">
+              <option>All Categories</option>
+              <option>Compost</option>
+              <option>Fertilizers</option>
+              <option>Pest Control</option>
+              <option>Seeds</option>
+            </select>
+            <select class="bg-white border border-gray-200 rounded-full px-6 py-2 focus:outline-none focus:border-green-500">
+              <option>Sort by</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest First</option>
+              <option>Popular</option>
+            </select>
+          </div>
+          <div class="relative">
+            <input type="search" placeholder="Search products..." class="w-full md:w-80 bg-white border border-gray-200 rounded-full px-6 py-2 pl-12 focus:outline-none focus:border-green-500">
+            <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl p-4">
+              <i class="fa-solid fa-seedling text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">New</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-gray-800 mb-2">Premium Organic Compost</h3>
+            <div class="flex items-center mb-2">
+              <div class="flex text-yellow-400 mr-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="text-sm text-gray-500">(48 reviews)</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">Rich in nutrients and perfect for all crops</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$29.99</span>
+              <span class="text-sm text-gray-500">per 20kg bag</span>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Repeat similar product cards with different content -->
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl p-4">
+              <i class="fa-solid fa-flask text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">-15%</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-gray-800 mb-2">Bio Growth Enhancer</h3>
+            <div class="flex items-center mb-2">
+              <div class="flex text-yellow-400 mr-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-sm text-gray-500">(32 reviews)</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">Advanced formula for rapid plant growth</p>
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <span class="text-2xl font-bold text-green-600">$42.99</span>
+                <span class="text-sm text-gray-400 line-through ml-2">$49.99</span>
+              </div>
+              <span class="text-sm text-gray-500">per liter</span>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl p-4">
+              <i class="fa-solid fa-virus text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Best Seller</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-gray-800 mb-2">Natural Pest Control</h3>
+            <div class="flex items-center mb-2">
+              <div class="flex text-yellow-400 mr-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="text-sm text-gray-500">(56 reviews)</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">Safe and effective pest management</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$34.99</span>
+              <span class="text-sm text-gray-500">per bottle</span>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="relative">
+            <div class="aspect-w-1 aspect-h-1 bg-gray-100 rounded-t-2xl p-4">
+              <i class="fa-solid fa-leaf text-6xl text-green-200"></i>
+            </div>
+            <span class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Popular</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-gray-800 mb-2">Soil Enricher Pro</h3>
+            <div class="flex items-center mb-2">
+              <div class="flex text-yellow-400 mr-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="text-sm text-gray-500">(41 reviews)</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">Complete soil nutrition package</p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-green-600">$54.99</span>
+              <span class="text-sm text-gray-500">per pack</span>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-cart-plus"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center gap-2">
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-green-50 hover:border-green-500 transition-colors">
+          <i class="fa-solid fa-chevron-left text-gray-600"></i>
+        </button>
+        <button class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center">1</button>
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-green-50 hover:border-green-500 transition-colors">2</button>
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-green-50 hover:border-green-500 transition-colors">3</button>
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-green-50 hover:border-green-500 transition-colors">
+          <i class="fa-solid fa-chevron-right text-gray-600"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="8083fbe9-fc64-4030-a4bf-37fd3bb231be" data-section-id="8083fbe9-fc64-4030-a4bf-37fd3bb231be">
+
+<htmlCode>
+<div id="root">
+  <section id="blog" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium">Our Blog</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-6 mb-4">Latest Agricultural Insights</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Stay updated with the latest farming techniques, tips, and industry news</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="relative">
+            <div class="aspect-w-16 aspect-h-9 rounded-t-2xl bg-green-50 flex items-center justify-center">
+              <i class="fa-solid fa-leaf text-6xl text-green-200"></i>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Farming Tips</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar text-green-600"></i>
+                <span class="text-sm text-gray-600">Mar 15, 2024</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-600"></i>
+                <span class="text-sm text-gray-600">5 min read</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Maximize Your Crop Yield with Organic Farming</h3>
+            <p class="text-gray-600 mb-4">Learn the best practices for organic farming and how to improve your soil health naturally.</p>
+            <button class="flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors">
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="relative">
+            <div class="aspect-w-16 aspect-h-9 rounded-t-2xl bg-green-50 flex items-center justify-center">
+              <i class="fa-solid fa-seedling text-6xl text-green-200"></i>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Research</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar text-green-600"></i>
+                <span class="text-sm text-gray-600">Mar 12, 2024</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-600"></i>
+                <span class="text-sm text-gray-600">7 min read</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Sustainable Agriculture: Future of Farming</h3>
+            <p class="text-gray-600 mb-4">Discover how sustainable practices are shaping the future of agriculture worldwide.</p>
+            <button class="flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors">
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="relative">
+            <div class="aspect-w-16 aspect-h-9 rounded-t-2xl bg-green-50 flex items-center justify-center">
+              <i class="fa-solid fa-flask text-6xl text-green-200"></i>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Innovation</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar text-green-600"></i>
+                <span class="text-sm text-gray-600">Mar 10, 2024</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-600"></i>
+                <span class="text-sm text-gray-600">4 min read</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">New Developments in Bio-Fertilizers</h3>
+            <p class="text-gray-600 mb-4">Explore the latest innovations in bio-fertilizer technology and their benefits.</p>
+            <button class="flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition-colors">
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300">
+          View All Articles
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="b4bcf8a4-43a3-4164-9607-fb522ba0ce7e" data-section-id="b4bcf8a4-43a3-4164-9607-fb522ba0ce7e">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium">Contact Us</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-6 mb-4">Get In Touch</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Have questions about our products? We're here to help you choose the right agricultural solutions</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-location-dot text-2xl text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">Our Location</h3>
+                  <p class="text-gray-600">123 Farming Valley, Agricultural District</p>
+                  <p class="text-gray-600">Green City, GC 12345</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-phone text-2xl text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">Phone Numbers</h3>
+                  <p class="text-gray-600">Sales: +1 (234) 567-8900</p>
+                  <p class="text-gray-600">Support: +1 (234) 567-8901</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-envelope text-2xl text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">Email Address</h3>
+                  <p class="text-gray-600">sales@earthmix.com</p>
+                  <p class="text-gray-600">support@earthmix.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-clock text-2xl text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-2">Business Hours</h3>
+                  <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                  <p class="text-gray-600">Saturday: 9:00 AM - 3:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <form class="space-y-6">
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="name">Full Name</label>
+                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition-colors" placeholder="Your name">
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="email">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition-colors" placeholder="your@email.com">
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+                <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition-colors">
+                  <option>Product Inquiry</option>
+                  <option>Technical Support</option>
+                  <option>Sales Question</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition-colors" placeholder="Your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="4ccab7bc-3e57-42b2-a5a0-3828f700f4df" data-section-id="4ccab7bc-3e57-42b2-a5a0-3828f700f4df">
+
+<htmlCode>
+<div id="root">
+  <section id="newsletter" class="py-16 bg-green-600">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto relative">
+        <!-- Decorative Elements -->
+        <div class="absolute -top-8 -left-8 w-16 h-16 bg-green-500 rounded-full opacity-20"></div>
+        <div class="absolute -bottom-8 -right-8 w-24 h-24 bg-green-500 rounded-full opacity-20"></div>
+        
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative z-10">
+          <div class="text-center mb-8">
+            <span class="text-green-600">
+              <i class="fa-solid fa-envelope-open-text text-4xl mb-4"></i>
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Stay Updated with EarthMix</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Subscribe to our newsletter for the latest agricultural tips, product updates, and exclusive offers
+            </p>
+          </div>
+
+          <form class="max-w-2xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="flex-1">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email address" 
+                  class="w-full px-6 py-4 rounded-full border border-gray-200 focus:border-green-500 focus:ring-2 focus:ring-green-200 focus:outline-none transition-colors"
+                />
+              </div>
+              <button 
+                type="submit" 
+                class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                Subscribe Now
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-8 text-center">
+            <div class="flex items-center justify-center gap-8 mb-6">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-green-600"></i>
+                <span class="text-gray-600">Weekly Updates</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-green-600"></i>
+                <span class="text-gray-600">Exclusive Offers</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-green-600"></i>
+                <span class="text-gray-600">Farming Tips</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500">
+              By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+            </p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="mt-8 flex justify-center gap-6">
+            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-100 hover:text-green-600 transition-colors duration-300">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-100 hover:text-green-600 transition-colors duration-300">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-100 hover:text-green-600 transition-colors duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-100 hover:text-green-600 transition-colors duration-300">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="78639980-fb59-4fa0-be1b-c291aa5b3601" data-section-id="78639980-fb59-4fa0-be1b-c291aa5b3601">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-gray-900 text-gray-300 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Company Info -->
+        <div class="space-y-6">
+          <div class="flex items-center text-white">
+            <i class="fa-solid fa-seedling text-2xl text-green-500 mr-2"></i>
+            <span class="text-2xl font-bold">EarthMix</span>
+          </div>
+          <p class="text-gray-400">
+            Your trusted partner in sustainable agriculture. Providing premium quality agricultural products since 2010.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white font-semibold text-lg mb-6">Quick Links</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="text-white font-semibold text-lg mb-6">Our Products</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Organic Compost
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Bio Fertilizers
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Plant Growth Enhancers
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Pest Control Solutions
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2">
+                <i class="fas fa-chevron-right text-xs"></i>
+                Agricultural Tools
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-white font-semibold text-lg mb-6">Contact Info</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-map-marker-alt text-green-500 mt-1"></i>
+              <span>123 Farming Valley, Agricultural District, Green City, GC 12345</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone-alt text-green-500"></i>
+              <span>+1 (234) 567-8900</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-envelope text-green-500"></i>
+              <span>info@earthmix.com</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-clock text-green-500"></i>
+              <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="border-t border-gray-800 pt-8 mt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="text-gray-400 text-sm">
+            © 2024 EarthMix. All rights reserved.
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-gray-400 text-sm">Payment Methods:</span>
+            <div class="flex gap-3">
+              <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+              <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+              <i class="fab fa-cc-paypal text-2xl text-gray-400"></i>
+              <i class="fab fa-cc-apple-pay text-2xl text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
